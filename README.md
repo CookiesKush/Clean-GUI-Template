@@ -23,5 +23,6 @@ I have alot more planned but will not update them if no stars :(
 
 
 ## Contact
-Email - Callumgm20052005@gmail.com
+Email - Callumgm20052005@gmail.com 
+<br>
 Discord - CookiesKush420#4152
