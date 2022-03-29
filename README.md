@@ -1,4 +1,4 @@
-# Clean Winforms GUI Base / TUT video coming soon!
+# Clean Winforms GUI Base
 
 <p align="center">
   <a href="https://github.com/Callumgm/Discord-Worm/graphs/commit-activity">
@@ -7,6 +7,8 @@
 </p>
 
 ## Info
+- [Tutorial Video](https://youtu.be/eqea8E5X-AU)
+
 - This is **just** a template
 - The only functions included are a **Simple Login System** & **All the UI functions & a clean dashboard page**
 - You may use this for whatever u want! `u can credit if u wish :)`
