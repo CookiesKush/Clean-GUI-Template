@@ -1,4 +1,4 @@
-# Clean Winforms GUI Base
+# Clean Winforms GUI Base / TUT video coming soon!
 
 <p align="center">
   <a href="https://github.com/Callumgm/Discord-Worm/graphs/commit-activity">
@@ -6,21 +6,20 @@
   </a>
 </p>
 
+## Info
+- This is **just** a template
+- The only functions included are a **Simple Login System** & **All the UI functions & a clean dashboard page**
+- You may use this for whatever u want! `u can credit if u wish :)`
+
+`More stars = More updates` I have alot more planned but will not update them if no stars :(
+
 ## Build from source
 1. Download or Gitclone this project
 2. Open `Tester.sln` with Visual Studio 2019
 3. Open `FrmLogin.cs` and add your paste bin url at **line 91**
 4. Build / Run the project (any problems feel free to contact me)
 
-
-## About
-Clean GUI base I used for some of my programs created within visual studio 2019 .
-I decided to release it since I thought others could learn from it :)
-
-`More stars = More updates`
-I have alot more planned but will not update them if no stars :(
-
-##Preview
+<br>
 
 | Login Form Preview | 
 | ------------- | 
