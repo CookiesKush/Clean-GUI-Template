@@ -86,6 +86,9 @@ namespace Tester
             }
             #endregion
 
+            bunifuCustomTextbox1.Visible = true;
+            bunifuCustomTextbox1.Text = $"Your HWID: {id}";
+
             #region Login Function
             WebClient wc = new WebClient();
             string HWIDLIST = wc.DownloadString("https://pastebin.com/raw/"); // Enter your pastebin RAW URL here
@@ -150,6 +153,8 @@ namespace Tester
         #region Form Load
         private void FrmLogin_Load(object sender, EventArgs e)
         {
+            bunifuCustomTextbox1.Visible = true;
+
             // If remember me check box has ever been check then we auto fill password
             if (Properties.Settings.Default.rememberMe == true)
             {
