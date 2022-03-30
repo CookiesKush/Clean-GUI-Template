@@ -75,68 +75,17 @@ namespace Tester
         #region Login Button Click
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            #region  HWIDGRAB
-            var mbs = new ManagementObjectSearcher("Select ProcessorId From Win32_processor");
-            ManagementObjectCollection mbsList = mbs.Get();
-            string id = "";
-            foreach (ManagementObject mo in mbsList)
-            {
-                id = mo["ProcessorId"].ToString();
-                break;
-            }
-            #endregion
-
-            bunifuCustomTextbox1.Visible = true;
-            bunifuCustomTextbox1.Text = $"Your HWID: {id}";
-
-            #region Login Function
-            WebClient wc = new WebClient();
-            string HWIDLIST = wc.DownloadString("https://pastebin.com/raw/"); // Enter your pastebin RAW URL here
-
-            #region  Check if password not set & hwid in database & usernameTxt input is their pc username
-            if (Properties.Settings.Default.Password == "" && HWIDLIST.Contains(id) && pc_username == usernameTxt.Text)
-            {
-                #region Set Password
-                Properties.Settings.Default.Password = passwordTxt.Text;
-                Properties.Settings.Default.Save(); // Saves the change
-                #endregion
-
-                alert.Show("Account Created Relogin!", alert.AlertType.success);
-            }
-            #endregion
-
-            #region Check if hwid in database & usernameTxt input is their pc username & passwordTxt input is = to there saved password
-            else if (HWIDLIST.Contains(id) && pc_username == usernameTxt.Text && Properties.Settings.Default.Password == passwordTxt.Text)
-            {
-                alert.Show("Logged In", alert.AlertType.success);
-
-                #region Remember me Checkbox
-                if (remembermeCheckbox.Checked == true)
-                {
-                    Properties.Settings.Default.rememberMe = true;
-                    Properties.Settings.Default.Save(); // Saves the change
-                }
-                #endregion
-
+            if (usernameTxt.Text == "change this to whatever username you want to use" && passwordTxt.Text == "change this to whatever password you want to use"){
+                MessageBox.Show("Welcome");
                 this.Hide();
                 var main_form = new Form1();
                 main_form.Closed += (s, args) => this.Close();
                 main_form.Show();
+            } else{
+                MessageBox.Show("Username or Password is incorrect.");
             }
-            #endregion
-
-            #region Else Invalid Inputs
-            else
-            {
-                clear_inputfields(); // Sets bot input fields to empty
-                alert.Show("Invalid Credentials", alert.AlertType.error);
-            }
-            #endregion
-            
-            wc.Dispose();
-            #endregion
         }
-        #endregion
+       
 
         #region Close & Minimize Btns
         private void bunifuCustomLabel2_Click(object sender, EventArgs e)
@@ -155,12 +104,6 @@ namespace Tester
         {
             bunifuCustomTextbox1.Visible = true;
 
-            // If remember me check box has ever been check then we auto fill password
-            if (Properties.Settings.Default.rememberMe == true)
-            {
-                remembermeCheckbox.Checked = true;
-                passwordTxt.Text = Properties.Settings.Default.Password;
-            }
         }
         #endregion
 
