@@ -75,18 +75,25 @@ namespace Tester
         #region Login Button Click
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            if (usernameTxt.Text == "change this to whatever username you want to use" && passwordTxt.Text == "change this to whatever password you want to use"){
-                MessageBox.Show("Welcome");
+            string[] usernames = { "admin", "admin2" };
+            string[] passwords = { "password", "password2" };
+
+
+            if (usernames.Contains(usernameTxt.Text) && passwords.Contains(passwordTxt.Text))
+            {
+                MessageBox.Show("Welcome " + pc_username);
                 alert.Show("Logged In", alert.AlertType.success);
                 this.Hide();
                 var main_form = new Form1();
                 main_form.Closed += (s, args) => this.Close();
                 main_form.Show();
-            } else{
+            }
+            else
+            {
                 MessageBox.Show("Username or Password is incorrect.");
             }
         }
-       
+
 
         #region Close & Minimize Btns
         private void bunifuCustomLabel2_Click(object sender, EventArgs e)
