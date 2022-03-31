@@ -13,10 +13,11 @@ I have made this very simple so there is no remember me button yet because I had
 ## Requirements
 You need to delete the Remember me label and checkbox, as I have previously stated this is a very simple auth version so it does not have a rememeber me function yet, Go to line 78 in the "FrmLogin.cs" file to change the username and password.
 
-## To-do List
+## To-do List ❌=Not done yet, ✅=Done
 - Remember me function.❌
 - Register system.❌
 - How to login page rework.❌
+- Fetch Usernames and Passwords from Pastebin instead of HWID.❌
 
 ## Contact
 Email - falcon@null.net
