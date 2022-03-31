@@ -11,7 +11,7 @@ I have removed the HWID Auth system and replaced it with a very simple Password 
 I have made this very simple so there is no remember me button yet because I had to remove it currently, in the feature maybe I will re-add it again!
 
 ## Requirements
-You need to delete the Remember me label and checkbox, as I have previously stated this is a very simple auth version so it does not have a rememeber me function yet, Go to line 79 in the "FrmLogin.cs" file to change the username and password.
+You need to delete the Remember me label and checkbox, as I have previously stated this is a very simple auth version so it does not have a rememeber me function yet, Go to line 78 in the "FrmLogin.cs" file to change the username and password.
 
 ## To-do List
 - Remember me function.❌
