@@ -76,11 +76,19 @@ namespace Tester
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
 
+            WebClient wc = new WebClient();
             string username = new System.Net.WebClient() { Proxy = null }.DownloadString("https://pastebin.com/raw/bvu0PLKm");
             string password = new System.Net.WebClient() { Proxy = null }.DownloadString("https://pastebin.com/raw/wx32Fszi");
+            string user = usernameTxt.Text;
+            string pass = passwordTxt.Text;
 
+            if (user == "" && pass == "")
+            {
+                MessageBox.Show("Error, Nothing filled in.");
+                this.Close();
+            }
 
-            if (username.Contains(usernameTxt.Text) && (password.Contains(passwordTxt.Text)))
+            if (username.Contains(user) && (password.Contains(pass)))
             {
                 MessageBox.Show("Welcome " + pc_username);
                 alert.Show("Logged In", alert.AlertType.success);
@@ -89,12 +97,9 @@ namespace Tester
                 main_form.Closed += (s, args) => this.Close();
                 main_form.Show();
             }
-            else
-            {
-                MessageBox.Show("Username or Password is incorrect.");
-            }
+           
         }
-
+        #endregion
 
         #region Close & Minimize Btns
         private void bunifuCustomLabel2_Click(object sender, EventArgs e)
@@ -140,4 +145,3 @@ namespace Tester
         #endregion
     }
 }
-#endregion
