@@ -108,14 +108,6 @@ namespace Tester
         }
         #endregion
 
-        #region Form Load
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-            bunifuCustomTextbox1.Visible = true;
-
-        }
-        #endregion
-
         #region How to Login Button
         private void label3_Click(object sender, EventArgs e)
         {
