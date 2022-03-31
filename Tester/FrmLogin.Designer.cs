@@ -47,7 +47,6 @@ namespace Tester
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -244,27 +243,12 @@ namespace Tester
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
-            // bunifuCustomTextbox1
-            // 
-            this.bunifuCustomTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomTextbox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomTextbox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bunifuCustomTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(12, 440);
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(332, 18);
-            this.bunifuCustomTextbox1.TabIndex = 28;
-            this.bunifuCustomTextbox1.Text = "Your HWID:";
-            this.bunifuCustomTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(356, 470);
-            this.Controls.Add(this.bunifuCustomTextbox1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bunifuCustomLabel2);
@@ -288,7 +272,6 @@ namespace Tester
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -317,6 +300,5 @@ namespace Tester
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
     }
 }
