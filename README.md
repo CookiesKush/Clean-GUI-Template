@@ -16,7 +16,6 @@ You need to delete the Remember me label and checkbox and the HWID Label too, as
 ## To-do List ❌=Not done yet, ✅=Done, 🟡=Already inculded in a different feature.
 - Remember me function.❌
 - Register system.🟡
-- How to login page rework.❌
 - Fetch Usernames and Passwords from Pastebin instead of HWID.✅
 
 ## What do if you get errors with Bunifu
