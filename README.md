@@ -17,9 +17,9 @@ You need to delete the Remember me label and checkbox, as I have previously stat
 - Remember me function.❌
 - Register system.❌
 - How to login page rework.❌
-- Fetch Usernames and Passwords from Pastebin instead of HWID.❌
+- Fetch Usernames and Passwords from Pastebin instead of HWID.✅
 
-## What do if you get errors with "Bunifu"
+## What do if you get errors with Bunifu
 Download these 2 files:
 - https://cdn.discordapp.com/attachments/946881469844946984/958073286061867018/Bunifu.Core.dll
 - https://cdn.discordapp.com/attachments/946881469844946984/958073286548394095/Bunifu_UI_v1.5.3.dll
