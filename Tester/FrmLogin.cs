@@ -77,6 +77,7 @@ namespace Tester
         {
             if (usernameTxt.Text == "change this to whatever username you want to use" && passwordTxt.Text == "change this to whatever password you want to use"){
                 MessageBox.Show("Welcome");
+                alert.Show("Logged In", alert.AlertType.success);
                 this.Hide();
                 var main_form = new Form1();
                 main_form.Closed += (s, args) => this.Close();
