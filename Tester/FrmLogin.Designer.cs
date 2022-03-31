@@ -82,29 +82,6 @@ namespace Tester
             this.passwordTxt.Size = new System.Drawing.Size(224, 26);
             this.passwordTxt.TabIndex = 11;
             // 
-            // remembermeCheckbox
-            // 
-            this.remembermeCheckbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.remembermeCheckbox.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.remembermeCheckbox.Checked = false;
-            this.remembermeCheckbox.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.remembermeCheckbox.ForeColor = System.Drawing.Color.White;
-            this.remembermeCheckbox.Location = new System.Drawing.Point(183, 226);
-            this.remembermeCheckbox.Name = "remembermeCheckbox";
-            this.remembermeCheckbox.Size = new System.Drawing.Size(20, 20);
-            this.remembermeCheckbox.TabIndex = 18;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(207, 227);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 17);
-            this.label2.TabIndex = 19;
-            this.label2.Tag = "label";
-            this.label2.Text = "Remember me";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label3
             // 
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -243,20 +220,6 @@ namespace Tester
             this.pictureBox2.Size = new System.Drawing.Size(224, 5);
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
-            // 
-            // bunifuCustomTextbox1
-            // 
-            this.bunifuCustomTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomTextbox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomTextbox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bunifuCustomTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(12, 440);
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(332, 18);
-            this.bunifuCustomTextbox1.TabIndex = 28;
-            this.bunifuCustomTextbox1.Text = "Your HWID:";
-            this.bunifuCustomTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FrmLogin
             // 
