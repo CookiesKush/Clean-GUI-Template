@@ -1,4 +1,4 @@
-# Clean Winforms GUI Base made by Callumgm
+# Clean Winforms GUI Base made by Callumgm (Remade with no HWID Auth system by falc0n)
 
 <p align="center">
   <a href="https://github.com/Callumgm/Discord-Worm/graphs/commit-activity">
@@ -6,9 +6,17 @@
   </a>
 </p>
 
-## What is new in this fork.
-I have removed the HWID Auth system with a very simple Password and Username system.
+## What have I changed in the auth system?
+I have removed the HWID Auth system and replaced it with a very simple Password and Username system.
 I have made this very simple so there is no remember me button yet because I had to remove it currently, in the feature maybe I will re-add it again!
+
+## Requirements
+You need to delete the Remember me label and checkbox, as I have previously stated this is a very simple auth version so it does not have a rememeber me function yet
+
+## To-do List
+- Remember me function.❌
+- Register system.❌
+- How to login page rework.❌
 
 ## Contact
 Email - falcon@null.net
