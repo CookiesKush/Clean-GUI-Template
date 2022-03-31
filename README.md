@@ -11,7 +11,7 @@ I have removed the HWID Auth system and replaced it with a very simple Password 
 I have made this very simple so there is no remember me button yet because I had to remove it currently, in the feature maybe I will re-add it again!
 
 ## Requirements
-You need to delete the Remember me label and checkbox, as I have previously stated this is a very simple auth version so it does not have a rememeber me function yet, Go to line 81 & 82 in the "FrmLogin.cs" file to change the username and password (Simply put in a new pastebin link with your passwords and usernames). You also need Visual Studio 2019 not 2022
+You need to delete the Remember me label and checkbox and the HWID Label too, as I have previously stated this is a very simple auth version so it does not have a rememeber me function yet, Go to line 81 & 82 in the "FrmLogin.cs" file to change the username and password (Simply put in a new pastebin link with your passwords and usernames). You also need Visual Studio 2019 not 2022
 
 ## To-do List ❌=Not done yet, ✅=Done
 - Remember me function.❌
