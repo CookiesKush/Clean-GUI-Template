@@ -75,11 +75,12 @@ namespace Tester
         #region Login Button Click
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            string[] usernames = { "admin", "admin2" };
-            string[] passwords = { "password", "password2" };
+
+            string username = new System.Net.WebClient() { Proxy = null }.DownloadString("https://pastebin.com/raw/bvu0PLKm");
+            string password = new System.Net.WebClient() { Proxy = null }.DownloadString("https://pastebin.com/raw/wx32Fszi");
 
 
-            if (usernames.Contains(usernameTxt.Text) && passwords.Contains(passwordTxt.Text))
+            if (username.Contains(usernameTxt.Text) && (password.Contains(passwordTxt.Text)))
             {
                 MessageBox.Show("Welcome " + pc_username);
                 alert.Show("Logged In", alert.AlertType.success);
