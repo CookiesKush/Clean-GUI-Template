@@ -97,7 +97,12 @@ namespace Tester
                 main_form.Closed += (s, args) => this.Close();
                 main_form.Show();
             }
-           
+
+            else
+            {
+                MessageBox.Show("Invalid username or password.");
+            }
+
         }
         #endregion
 
