@@ -2,18 +2,18 @@
 
 <p align="center">
   <a href="https://github.com/Callumgm/Discord-Worm/graphs/commit-activity">
-    <img src="https://img.shields.io/badge/maintained-yes-success?style=flat-square" alt="Maintained yes" />
+    <img src="https://img.shields.io/badge/maintained-very little-success?style=flat-square" alt="Maintained yes" />
   </a>
 </p>
 
 ## Info
 - [Tutorial Video](https://youtu.be/eqea8E5X-AU)
 
-- This is **just** a template
+- This is **just** a template which **you** can use youself :D
 - The only functions included are a **Simple Login System** & **All the UI functions & a clean dashboard page**
 - You may use this for whatever u want! `u can credit if u wish :)`
 
-`More stars = More updates` I have alot more planned but will not update them if no stars :(
+**UPDATE SOON**
 
 ## Build from source
 1. Download or Gitclone this project
