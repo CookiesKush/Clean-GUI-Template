@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/Callumgm/Discord-Worm/graphs/commit-activity">
-    <img src="https://img.shields.io/badge/maintained-yes-success?style=flat-square" alt="Maintained yes" />
+    <img src="https://img.shields.io/badge/maintained-very little-success?style=flat-square" alt="Maintained yes" />
   </a>
 </p>
 
