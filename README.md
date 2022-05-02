@@ -8,7 +8,7 @@
 
 ## What have I changed in the auth system?
 I have removed the HWID Auth system and replaced it with a very simple Password and Username system.
-I have made this very simple so there is no remember me button yet because I had to remove it currently, in the feature maybe I will re-add it again!
+Also huge thanks to the Owner of the original repository for helping me re-add the Remember me button and fix minor bugs!
 
 ## Requirements
 You need to delete the HWID Label, as I have previously stated this is a very simple auth version so it does not have a rememeber me function yet, Go to line 81 & 82 in the "FrmLogin.cs" file to change the username and password (Simply put in a new pastebin link with your passwords and usernames). You also need Visual Studio 2019 not 2022
@@ -34,3 +34,5 @@ Email - falcon@null.net
 Discord - falcоn#0001 (username must be copied from here otherwise it won't work)
 <br>
 And if you're here from the discord announcement, hi!
+<br>
+(remember me button added by - CallumGm)
