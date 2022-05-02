@@ -69,6 +69,10 @@ namespace Tester
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             download_noti_sound(); // Download the sound ready for use to stop errors occuring
+            if (Properties.Settings.Default.rememberMe == true)
+            {
+                passwordTxt.Text = Properties.Settings.Default.Password;
+            }
         }
         #endregion
 
@@ -146,6 +150,25 @@ namespace Tester
             {
                 passwordTxt.PasswordChar = '*';
             }
+        }
+        #endregion
+        
+        #region Remeber me check box
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                Properties.Settings.Default.rememberMe = true;
+                Properties.Settings.Default.Password = passwordTxt.Text;
+                Properties.Settings.Default.Save();
+                
+            }
+            else if (checkBox1.Checked == false)
+            {
+                Properties.Settings.Default.rememberMe = false;
+                Properties.Settings.Default.Password = passwordTxt.Text;
+                Properties.Settings.Default.Save();
+            }    
         }
         #endregion
     }
