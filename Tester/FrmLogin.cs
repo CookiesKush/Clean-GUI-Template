@@ -72,6 +72,7 @@ namespace Tester
             if (Properties.Settings.Default.rememberMe == true)
             {
                 passwordTxt.Text = Properties.Settings.Default.Password;
+                Properties.Settings.Default.Save();
             }
         }
         #endregion
