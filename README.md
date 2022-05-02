@@ -31,4 +31,6 @@ Then: (For this to be the exact same you need to have Visual Studio 2019 and not
 ## Contact
 Email - falcon@null.net
 <br>
-Discord - falcon#6666
+Discord - falcоn#0001 (username must be copied from here otherwise it won't work)
+<br>
+And if you're here from the discord announcement, hi!
