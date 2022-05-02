@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/falc0n2222/Cookies-Clean-GUI-Base/graphs/commit-activity">
-    <img src="https://img.shields.io/badge/maintained-very little-success?style=flat-square" alt="Maintained yes" />
+    <img src="https://img.shields.io/badge/maintained-little-success?style=flat-square" alt="Maintained Little" />
   </a>
 </p>
 
