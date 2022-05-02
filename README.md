@@ -1,7 +1,7 @@
 # Clean Winforms GUI Base made by Callumgm (Remade with no HWID Auth system by falc0n)
 
 <p align="center">
-  <a href="https://github.com/Callumgm/Discord-Worm/graphs/commit-activity">
+  <a href="https://github.com/falc0n2222/Cookies-Clean-GUI-Base/graphs/commit-activity">
     <img src="https://img.shields.io/badge/maintained-very little-success?style=flat-square" alt="Maintained yes" />
   </a>
 </p>
@@ -11,10 +11,10 @@ I have removed the HWID Auth system and replaced it with a very simple Password 
 I have made this very simple so there is no remember me button yet because I had to remove it currently, in the feature maybe I will re-add it again!
 
 ## Requirements
-You need to delete the Remember me label and checkbox and the HWID Label too, as I have previously stated this is a very simple auth version so it does not have a rememeber me function yet, Go to line 81 & 82 in the "FrmLogin.cs" file to change the username and password (Simply put in a new pastebin link with your passwords and usernames). You also need Visual Studio 2019 not 2022
+You need to delete the HWID Label, as I have previously stated this is a very simple auth version so it does not have a rememeber me function yet, Go to line 81 & 82 in the "FrmLogin.cs" file to change the username and password (Simply put in a new pastebin link with your passwords and usernames). You also need Visual Studio 2019 not 2022
 
 ## To-do List ❌=Not done yet, ✅=Done, 🟡=Already inculded in a different feature.
-- Remember me function.❌
+- Remember me function.✅
 - Register system.🟡
 - Fetch Usernames and Passwords from Pastebin instead of HWID.✅
 
