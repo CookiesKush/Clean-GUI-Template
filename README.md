@@ -1,42 +1,14 @@
 # Clean Winforms GUI Base
 
 <p align="center">
-  <a href="https://github.com/Callumgm/Cookies-Clean-GUI-Base/graphs/commit-activity">
+  <a href="https://github.com/falc0n2222/Cookies-Clean-GUI-Base/graphs/commit-activity">
     <img src="https://img.shields.io/badge/maintained-very little-success?style=flat-square" alt="Maintained yes" />
   </a>
 </p>
 
-## Info
-- [Tutorial Video](https://youtu.be/eqea8E5X-AU) (abit outdated)
-
-- This is just a template!
-- The only functions included are a **Simple Login System** & **A clean dashboard page**
-- You may use this for whatever u want! `u can give credit if u wish :)`
-
-**UPDATE SOON**
-
-## Build from source
-1. Download or Gitclone this project
-2. Open `Tester.sln` with Visual Studio 2019
-3. Open `FrmLogin.cs` and add your raw paste bin url at **line 58**
-4. Build / Run the project (any problems feel free to contact me)
-
-## How to fix Bunifu UI errors
-- Download these 2 files:
-
-[Bunifu.Core.dll](https://cdn.discordapp.com/attachments/946881469844946984/958073286061867018/Bunifu.Core.dll)
-[Bunifu_UI_v1.5.3.dll](https://cdn.discordapp.com/attachments/946881469844946984/958073286548394095/Bunifu_UI_v1.5.3.dll)
-
-(For this to be the exact same you need to have Visual Studio 2019 and not 2022) 
-1. Left click on project (green sqaure at top right) then click Add/Add Reference
-2. And there at the bottom of menu you can find Browse
-3. You click on it and select the dll's then press OK
-
-<br>
-
-| Login Form Preview | 
-| ------------- | 
-| ![Login Form Preview](https://github.com/Callumgm/Cookies-Clean-GUI-Base/blob/master/png/Login_preview.png) |
+## What have I changed in the auth system?
+I have removed the HWID Auth system and replaced it with a very simple Password and Username system.
+I have made this very simple so there is no remember me button yet because I had to remove it currently, in the feature maybe I will re-add it again!
 
 ## Change Log
 ### 22/05/20222
@@ -54,4 +26,8 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Contact
-Email - Callumgm20052005@gmail.com
+Email - falcon@null.net
+<br>
+Discord - falcоn#0001 (username must be copied from here otherwise it won't work)
+<br>
+And if you're here from the discord announcement, hi!
