@@ -7,7 +7,7 @@ namespace Tester
 {
     public partial class Form1 : Form
     {
-        #region Rounded Window Imports
+        #region DLL imports
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -20,13 +20,7 @@ namespace Tester
         );
         #endregion
 
-        #region Form Closing
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        { 
-        }
-        #endregion
-
-        #region Form Fade In
+        #region Form Fading
         private void fade_in_Tick(object sender, EventArgs e)
         {
             if (this.Opacity >= 100)
@@ -39,8 +33,8 @@ namespace Tester
         #region Form Load
         private void Form1_Load(object sender, EventArgs e)
         {
-            #region Set Dashboard Panel
-            // Set Current Button Color
+            #region Set dashboard panel
+            // Current Button
             button2.ForeColor = Color.FromArgb(116, 86, 174);
             button2.BackColor = Color.FromArgb(26, 26, 26);
 
@@ -59,21 +53,12 @@ namespace Tester
         }
         #endregion
 
-        #region Close & Minimize Form
-        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        #region Side Bar 
 
-        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-        #endregion
-        
-        #region Side Bar Functions
+        #region Functions
         bool sliderExpanded;
 
+        #region Side Bar Timer
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
             #region Expand Slider
@@ -98,11 +83,16 @@ namespace Tester
             }
             #endregion
         }
+        #endregion
 
+        #region Menu Btn Click
         private void menuButton_Click(object sender, EventArgs e)
         {       
             sidebarTimer.Start();
         }
+        #endregion
+        
+        #endregion
 
         #region Tabs
 
@@ -119,11 +109,11 @@ namespace Tester
             button6.ForeColor = Color.White;
             button6.BackColor = Color.FromArgb(35, 40, 45);
 
-            this.panelWindow.Controls.Clear(); // Clear panel
-            FrmBuild FrmDashboard_Vrb = new FrmBuild() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true }; // Set new panel Properties
-            FrmDashboard_Vrb.FormBorderStyle = FormBorderStyle.None; // Set some more Properties
-            this.panelWindow.Controls.Add(FrmDashboard_Vrb); // Add the form the "tab form"
-            FrmDashboard_Vrb.Show(); // Show the form
+            this.panelWindow.Controls.Clear();
+            FrmBuild FrmDashboard_Vrb = new FrmBuild() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            FrmDashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.panelWindow.Controls.Add(FrmDashboard_Vrb);
+            FrmDashboard_Vrb.Show();
         }
         #endregion
 
@@ -170,7 +160,7 @@ namespace Tester
         #endregion
 
         #endregion
-
+       
         #endregion
 
         #region Form Initialize
@@ -178,8 +168,43 @@ namespace Tester
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
-            this.Opacity = 0; // Set Opacity = 0 so the form can fade in
+            this.Opacity = 0;
         }
         #endregion
+
+        #region Exit & Minimize Btn Click
+
+        #region Exit Btn
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void bunifuCustomLabel2_MouseEnter(object sender, EventArgs e)
+        {
+            bunifuCustomLabel2.ForeColor = Color.FromArgb(173, 35, 35);
+        }
+        private void bunifuCustomLabel2_MouseLeave(object sender, EventArgs e)
+        {
+            bunifuCustomLabel2.ForeColor = Color.White;
+        }
+        #endregion
+
+        #region Minimize Btn
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        private void bunifuCustomLabel1_MouseEnter(object sender, EventArgs e)
+        {
+            bunifuCustomLabel1.ForeColor = Color.FromArgb(173, 35, 35);
+        }
+        private void bunifuCustomLabel1_MouseLeave(object sender, EventArgs e)
+        {
+            bunifuCustomLabel1.ForeColor = Color.White;
+        }
+        #endregion
+
+        #endregion
+
     }
 }

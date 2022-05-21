@@ -7,7 +7,7 @@
     <ProjectGuid>{C6587142-FD9B-41B6-B144-FD7BE6F8918C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Tester</RootNamespace>
-    <AssemblyName>Cookies RAT Builder</AssemblyName>
+    <AssemblyName>Cookies GUI Base</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,12 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Untitled1.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Core">
+      <HintPath>..\..\..\..\Downloads\Bunifu.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
@@ -216,6 +220,11 @@
     <None Include="Resources\password2.png" />
     <None Include="Resources\user2.png" />
     <None Include="Resources\eye.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\settings %281%29.png" />
+    <None Include="Resources\automatic.png" />
+    <None Include="Resources\id.png" />
+    <None Include="Resources\id %281%29.png" />
     <Content Include="Untitled1.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

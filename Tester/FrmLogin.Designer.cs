@@ -1,4 +1,4 @@
-
+﻿
 namespace Tester
 {
     partial class FrmLogin
@@ -47,7 +47,6 @@ namespace Tester
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -62,12 +61,14 @@ namespace Tester
             this.usernameTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usernameTxt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameTxt.ForeColor = System.Drawing.Color.White;
-            this.usernameTxt.Location = new System.Drawing.Point(85, 114);
+            this.usernameTxt.Location = new System.Drawing.Point(85, 117);
             this.usernameTxt.Multiline = true;
             this.usernameTxt.Name = "usernameTxt";
             this.usernameTxt.Size = new System.Drawing.Size(224, 26);
             this.usernameTxt.TabIndex = 3;
-            this.usernameTxt.Text = "Enter username here";
+            this.usernameTxt.Text = "Enter PC username here";
+            this.usernameTxt.Enter += new System.EventHandler(this.usernameTxt_Enter);
+            this.usernameTxt.Leave += new System.EventHandler(this.usernameTxt_Leave);
             // 
             // passwordTxt
             // 
@@ -75,7 +76,7 @@ namespace Tester
             this.passwordTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordTxt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTxt.ForeColor = System.Drawing.Color.White;
-            this.passwordTxt.Location = new System.Drawing.Point(85, 177);
+            this.passwordTxt.Location = new System.Drawing.Point(85, 180);
             this.passwordTxt.Multiline = true;
             this.passwordTxt.Name = "passwordTxt";
             this.passwordTxt.PasswordChar = '*';
@@ -84,28 +85,33 @@ namespace Tester
             // 
             // remembermeCheckbox
             // 
-            this.remembermeCheckbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.remembermeCheckbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.remembermeCheckbox.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.remembermeCheckbox.Checked = true;
-            this.remembermeCheckbox.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.remembermeCheckbox.Checked = false;
+            this.remembermeCheckbox.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.remembermeCheckbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.remembermeCheckbox.ForeColor = System.Drawing.Color.White;
-            this.remembermeCheckbox.Location = new System.Drawing.Point(0, 0);
+            this.remembermeCheckbox.Location = new System.Drawing.Point(183, 225);
             this.remembermeCheckbox.Name = "remembermeCheckbox";
             this.remembermeCheckbox.Size = new System.Drawing.Size(20, 20);
-            this.remembermeCheckbox.TabIndex = 29;
+            this.remembermeCheckbox.TabIndex = 18;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label2.Location = new System.Drawing.Point(207, 226);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
-            this.label2.TabIndex = 28;
+            this.label2.Size = new System.Drawing.Size(102, 17);
+            this.label2.TabIndex = 19;
+            this.label2.Tag = "label";
+            this.label2.Text = "Remember me";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(85, 343);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label3.Location = new System.Drawing.Point(85, 353);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(181, 17);
             this.label3.TabIndex = 20;
@@ -113,15 +119,18 @@ namespace Tester
             this.label3.Text = "How to Login?";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.label3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
             // label4
             // 
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label4.Location = new System.Drawing.Point(2, 1);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(315, 17);
             this.label4.TabIndex = 24;
             this.label4.Tag = "label";
-            this.label4.Text = "Your Title Here";
+            this.label4.Text = "Title Here";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // bunifuCustomLabel1
@@ -135,6 +144,8 @@ namespace Tester
             this.bunifuCustomLabel1.TabIndex = 23;
             this.bunifuCustomLabel1.Text = "-";
             this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
+            this.bunifuCustomLabel1.MouseEnter += new System.EventHandler(this.bunifuCustomLabel1_MouseEnter);
+            this.bunifuCustomLabel1.MouseLeave += new System.EventHandler(this.bunifuCustomLabel1_MouseLeave);
             // 
             // bunifuCustomLabel2
             // 
@@ -148,18 +159,21 @@ namespace Tester
             this.bunifuCustomLabel2.TabIndex = 22;
             this.bunifuCustomLabel2.Text = "X";
             this.bunifuCustomLabel2.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
+            this.bunifuCustomLabel2.MouseEnter += new System.EventHandler(this.bunifuCustomLabel2_MouseEnter);
+            this.bunifuCustomLabel2.MouseLeave += new System.EventHandler(this.bunifuCustomLabel2_MouseLeave);
             // 
             // bunifuDragControl1
             // 
             this.bunifuDragControl1.Fixed = true;
             this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this;
+            this.bunifuDragControl1.TargetControl = this.label4;
             this.bunifuDragControl1.Vertical = true;
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::Tester.Properties.Resources.eye;
-            this.pictureBox6.Location = new System.Drawing.Point(316, 181);
+            this.pictureBox6.Location = new System.Drawing.Point(316, 184);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(18, 19);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -194,7 +208,7 @@ namespace Tester
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(85, 303);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(85, 309);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
@@ -205,7 +219,7 @@ namespace Tester
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Tester.Properties.Resources.password1;
-            this.pictureBox4.Location = new System.Drawing.Point(40, 177);
+            this.pictureBox4.Location = new System.Drawing.Point(40, 180);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(39, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -215,7 +229,7 @@ namespace Tester
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Tester.Properties.Resources.user;
-            this.pictureBox3.Location = new System.Drawing.Point(40, 114);
+            this.pictureBox3.Location = new System.Drawing.Point(40, 117);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(39, 30);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -225,7 +239,7 @@ namespace Tester
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Tester.Properties.Resources.rainbow_bar;
-            this.pictureBox1.Location = new System.Drawing.Point(85, 202);
+            this.pictureBox1.Location = new System.Drawing.Point(85, 205);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(224, 5);
             this.pictureBox1.TabIndex = 12;
@@ -234,22 +248,11 @@ namespace Tester
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Tester.Properties.Resources.rainbow_bar;
-            this.pictureBox2.Location = new System.Drawing.Point(85, 139);
+            this.pictureBox2.Location = new System.Drawing.Point(85, 142);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(224, 5);
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(197, 225);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(100, 17);
-            this.checkBox1.TabIndex = 30;
-            this.checkBox1.Text = "Remember me?";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // FrmLogin
             // 
@@ -257,7 +260,6 @@ namespace Tester
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(356, 470);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bunifuCustomLabel2);
@@ -279,8 +281,9 @@ namespace Tester
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmLogin";
+            this.Text = "xxxx";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -309,6 +312,5 @@ namespace Tester
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
