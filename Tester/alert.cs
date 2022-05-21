@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Media;
 using System.Windows.Forms;
 
@@ -7,12 +8,12 @@ namespace Tester
 {
     public partial class alert : Form
     {
-        // CBA to explain what all this shitz does if your really THAT intrested then contact me CookiesKush420#4152 and i can explain
+        string temp = Path.GetTempPath();
 
         #region Notification Sound
         private void NotificationSound()
         {
-            SoundPlayer simpleSound = new SoundPlayer($@"{Environment.CurrentDirectory}\noti.wav");
+            SoundPlayer simpleSound = new SoundPlayer($@"{temp}\noti.wav");
             simpleSound.Play();
         }
         #endregion
@@ -65,8 +66,8 @@ namespace Tester
         {
             this.Opacity = 0;
             fade.Start();
-            this.Top = 935;
-            this.Left = Screen.PrimaryScreen.Bounds.Height - this.Height + 510;
+            this.Top = Screen.PrimaryScreen.Bounds.Bottom - 100;
+            this.Left = Screen.PrimaryScreen.Bounds.Left + 10;
         }
         #endregion
 

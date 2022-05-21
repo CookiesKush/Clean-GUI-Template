@@ -47,9 +47,9 @@ namespace Tester
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.panelWindow = new System.Windows.Forms.Panel();
             this.fade_in = new System.Windows.Forms.Timer(this.components);
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.rainbowbar = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
@@ -76,7 +76,7 @@ namespace Tester
             this.creatorLabel1.Name = "creatorLabel1";
             this.creatorLabel1.Size = new System.Drawing.Size(835, 23);
             this.creatorLabel1.TabIndex = 5;
-            this.creatorLabel1.Text = "Your Title";
+            this.creatorLabel1.Text = "Title Here";
             this.creatorLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuCustomLabel2
@@ -91,6 +91,8 @@ namespace Tester
             this.bunifuCustomLabel2.TabIndex = 6;
             this.bunifuCustomLabel2.Text = "X";
             this.bunifuCustomLabel2.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
+            this.bunifuCustomLabel2.MouseEnter += new System.EventHandler(this.bunifuCustomLabel2_MouseEnter);
+            this.bunifuCustomLabel2.MouseLeave += new System.EventHandler(this.bunifuCustomLabel2_MouseLeave);
             // 
             // sidebar
             // 
@@ -233,6 +235,20 @@ namespace Tester
             this.fade_in.Interval = 10;
             this.fade_in.Tick += new System.EventHandler(this.fade_in_Tick);
             // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.bunifuCustomLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(802, -4);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(18, 24);
+            this.bunifuCustomLabel1.TabIndex = 12;
+            this.bunifuCustomLabel1.Text = "-";
+            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
+            this.bunifuCustomLabel1.MouseEnter += new System.EventHandler(this.bunifuCustomLabel1_MouseEnter);
+            this.bunifuCustomLabel1.MouseLeave += new System.EventHandler(this.bunifuCustomLabel1_MouseLeave);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Tester.Properties.Resources.rainbow_bar;
@@ -253,18 +269,6 @@ namespace Tester
             this.rainbowbar.TabIndex = 11;
             this.rainbowbar.TabStop = false;
             // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.bunifuCustomLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(802, -4);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(18, 24);
-            this.bunifuCustomLabel1.TabIndex = 12;
-            this.bunifuCustomLabel1.Text = "-";
-            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,9 +288,7 @@ namespace Tester
             this.Name = "Form1";
             this.Opacity = 0.87D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cookies RAT Builder";
-            this.TopMost = true;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Text = "Title Here";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

@@ -1,36 +1,14 @@
-﻿using System;
-using System.IO;
-using System.Windows.Forms;
-using System.Diagnostics;
-using System.Net;
+﻿using System.Windows.Forms;
 
 namespace Tester
 {
     public partial class FrmHelp : Form
     {
+        #region Form Initialize
         public FrmHelp()
         {
             InitializeComponent();
         }
-
-        private void FrmHelp_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

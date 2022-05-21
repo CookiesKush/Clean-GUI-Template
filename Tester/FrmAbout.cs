@@ -1,8 +1,5 @@
 ﻿using System;
-using System.IO;
 using System.Windows.Forms;
-using System.Diagnostics;
-using System.Net;
 
 namespace Tester
 {
@@ -15,10 +12,14 @@ namespace Tester
         }
         #endregion
 
-        #region Form Load
-        private void FrmHelp_Load(object sender, EventArgs e)
+        #region Both button clicks
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Button 1");
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Button 2");
         }
         #endregion
     }

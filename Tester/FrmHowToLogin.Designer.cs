@@ -32,7 +32,6 @@ namespace Tester
             this.components = new System.ComponentModel.Container();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -59,16 +58,6 @@ namespace Tester
             this.bunifuCustomLabel1.Text = "How to login?";
             this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(12, 90);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(518, 226);
-            this.bunifuCustomLabel2.TabIndex = 1;
-            this.bunifuCustomLabel2.Text = "(1). \r\n\r\n(2). \r\n\r\n(3). \r\n\r\n(4). ";
-            // 
             // label3
             // 
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -82,6 +71,8 @@ namespace Tester
             this.label3.Text = "Return to login page";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.label3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
             // pictureBox5
             // 
@@ -110,7 +101,6 @@ namespace Tester
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmHowToLogin";
@@ -126,7 +116,6 @@ namespace Tester
 
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox1;
