@@ -1,4 +1,4 @@
-# Clean Winforms GUI Base
+# Clean Winforms GUI Template
 
 <p align="center">
   <a href="https://github.com/falc0n2222/Cookies-Clean-GUI-Base/graphs/commit-activity">
