@@ -33,11 +33,6 @@
 2. And there at bottom of menu you can find Browse
 3. You click on it and select the dll's then press OK
 
-<br>
-
-| Login Form Preview | 
-| ------------- | 
-| ![Login Form Preview](https://github.com/Callumgm/Cookies-Clean-GUI-Base/blob/master/png/Login_preview.png) |
 
 ## Change Log
 ### 22/05/20222
