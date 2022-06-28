@@ -24,8 +24,22 @@
 1. Download or Gitclone this project
 2. Open Tester.sln with Visual Studio 2019
 3. Add the Bunfiu files
-4. Open FrmLogin.cs and add your raw paste bin url on line 58
+4. Open FrmLogin.cs and add your raw paste bin url near line 58
 5. Build / Run the project
+```
+
+## How to fix Bunifu errors
+
+[Bunifu.Core.dll](https://cdn.discordapp.com/attachments/946881469844946984/958073286061867018/Bunifu.Core.dll)
+<br>
+[Bunifu_UI_v1.5.3.dll](https://cdn.discordapp.com/attachments/946881469844946984/958073286548394095/Bunifu_UI_v1.5.3.dll)
+
+```sh
+1. Download the dll files
+2. Left click on project then click "Add Reference"
+3. And there at bottom of menu you can find Browse
+4. Click it and select both dll files then press OK
+5. Error should be fixed (rebuild the project)
 ```
 
 ## Author
