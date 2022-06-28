@@ -20,7 +20,7 @@
 
 ## Usage
 
-```sh
+```
 1. Download or Gitclone this project
 2. Open Tester.sln with Visual Studio 2019
 3. Add the Bunfiu files
@@ -34,7 +34,7 @@
 <br>
 [Bunifu_UI_v1.5.3.dll](https://cdn.discordapp.com/attachments/946881469844946984/958073286548394095/Bunifu_UI_v1.5.3.dll)
 
-```sh
+```
 1. Download the dll files
 2. Left click on project then click "Add Reference"
 3. And there at bottom of menu you can find Browse
