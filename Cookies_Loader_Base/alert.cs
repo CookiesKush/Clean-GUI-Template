@@ -4,7 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
+<<<<<<< HEAD:Cookies_Loader_Base/alert.cs
 using System.Linq;
+=======
+>>>>>>> 6714f74c5657d340929609d35e47dff925561cc7:Tester/alert.cs
 using System.Media;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,10 +17,19 @@ namespace Cookies_Loader_Base
 {
     public partial class alert : Form
     {
+<<<<<<< HEAD:Cookies_Loader_Base/alert.cs
         #region Notification Sound
         private void NotificationSound()
         {
             SoundPlayer simpleSound = new SoundPlayer(Path.GetTempPath() + "noti.wav");
+=======
+        string temp = Path.GetTempPath();
+
+        #region Notification Sound
+        private void NotificationSound()
+        {
+            SoundPlayer simpleSound = new SoundPlayer($@"{temp}\noti.wav");
+>>>>>>> 6714f74c5657d340929609d35e47dff925561cc7:Tester/alert.cs
             simpleSound.Play();
         }
         #endregion
@@ -65,8 +77,8 @@ namespace Cookies_Loader_Base
         {
             this.Opacity = 0;
             fade.Start();
-            this.Top = 935;
-            this.Left = Screen.PrimaryScreen.Bounds.Height - this.Height + 510;
+            this.Top = Screen.PrimaryScreen.Bounds.Bottom - 100;
+            this.Left = Screen.PrimaryScreen.Bounds.Left + 10;
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)

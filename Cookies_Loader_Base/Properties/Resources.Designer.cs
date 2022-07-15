@@ -63,6 +63,7 @@ namespace Cookies_Loader_Base.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD:Cookies_Loader_Base/Properties/Resources.Designer.cs
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
@@ -96,6 +97,11 @@ namespace Cookies_Loader_Base.Properties {
         internal static System.Drawing.Bitmap close_button {
             get {
                 object obj = ResourceManager.GetObject("close-button", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap automatic {
+            get {
+                object obj = ResourceManager.GetObject("automatic", resourceCulture);
+>>>>>>> 6714f74c5657d340929609d35e47dff925561cc7:Tester/Properties/Resources.Designer.cs
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,7 +179,31 @@ namespace Cookies_Loader_Base.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD:Cookies_Loader_Base/Properties/Resources.Designer.cs
         internal static System.Drawing.Bitmap IMG_4826 {
+=======
+        internal static System.Drawing.Bitmap id {
+            get {
+                object obj = ResourceManager.GetObject("id", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap id__1_ {
+            get {
+                object obj = ResourceManager.GetObject("id (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info__1_ {
+>>>>>>> 6714f74c5657d340929609d35e47dff925561cc7:Tester/Properties/Resources.Designer.cs
             get {
                 object obj = ResourceManager.GetObject("IMG_4826", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -246,6 +276,26 @@ namespace Cookies_Loader_Base.Properties {
         internal static System.Drawing.Bitmap Screenshot_2 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings {
+            get {
+                object obj = ResourceManager.GetObject("settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings__1_ {
+            get {
+                object obj = ResourceManager.GetObject("settings (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
