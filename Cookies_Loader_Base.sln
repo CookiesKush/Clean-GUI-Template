@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cookies_Loader_Base", "Cookies_Loader_Base\Cookies_Loader_Base.csproj", "{2C5905A8-A227-4934-B4B5-BEA0F40577F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C5905A8-A227-4934-B4B5-BEA0F40577F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C5905A8-A227-4934-B4B5-BEA0F40577F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C5905A8-A227-4934-B4B5-BEA0F40577F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C5905A8-A227-4934-B4B5-BEA0F40577F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2335AA12-29DD-4906-985E-2D63E3213AF8}
+	EndGlobalSection
+EndGlobal
