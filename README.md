@@ -12,6 +12,12 @@
 
 > Simple and clean WinForms GUI created in my own spare time
 
+
+![Login](https://user-images.githubusercontent.com/99442285/179139527-ed3e48c4-68de-4301-8a59-d715063e0783.png)
+![Register](https://user-images.githubusercontent.com/99442285/179139569-3dd3d1d2-caa5-46e3-8a5e-1b381f1254b4.png)
+![Main Menu](https://user-images.githubusercontent.com/99442285/179139724-6286470c-9487-4657-9b80-216a75fc6788.png)
+
+
 ## 🚀 〢 Usage
 
 ```c
