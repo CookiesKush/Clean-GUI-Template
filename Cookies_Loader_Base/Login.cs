@@ -119,9 +119,9 @@ namespace Cookies_Loader_Base
 
         #region API Config
         public static api KeyAuthApp = new api(
-            name: "Cpp Test",
-            ownerid: "gOtVyaoa7S",
-            secret: "e0f6093cc1d1434f4575115314a04b3283a953d07601e596be8b10f0a385d795",
+            name: "",
+            ownerid: "",
+            secret: "",
             version: "1.0"
         );
         #endregion

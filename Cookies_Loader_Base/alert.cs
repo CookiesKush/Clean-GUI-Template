@@ -4,10 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
-<<<<<<< HEAD:Cookies_Loader_Base/alert.cs
 using System.Linq;
-=======
->>>>>>> 6714f74c5657d340929609d35e47dff925561cc7:Tester/alert.cs
 using System.Media;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,22 +14,11 @@ namespace Cookies_Loader_Base
 {
     public partial class alert : Form
     {
-<<<<<<< HEAD:Cookies_Loader_Base/alert.cs
-        #region Notification Sound
         private void NotificationSound()
         {
             SoundPlayer simpleSound = new SoundPlayer(Path.GetTempPath() + "noti.wav");
-=======
-        string temp = Path.GetTempPath();
-
-        #region Notification Sound
-        private void NotificationSound()
-        {
-            SoundPlayer simpleSound = new SoundPlayer($@"{temp}\noti.wav");
->>>>>>> 6714f74c5657d340929609d35e47dff925561cc7:Tester/alert.cs
-            simpleSound.Play();
         }
-        #endregion
+        string temp = Path.GetTempPath();
 
         public alert(string _message, AlertType type)
         {

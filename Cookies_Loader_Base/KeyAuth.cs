@@ -235,12 +235,6 @@ namespace Cookies_Loader_Base
             #endregion
             var json = response_decoder.string_to_generic<response_structure>(response);
             load_response_struct(json);
-            if (json.success)
-            {
-                load_user_data(json.info);
-                TimeLeft timeleftForm = new TimeLeft();
-                timeleftForm.Show();
-            }
         }
         /// <summary>
         /// Authenticates the user using their username and password
@@ -283,12 +277,7 @@ namespace Cookies_Loader_Base
             #endregion
             var json = response_decoder.string_to_generic<response_structure>(response);
             load_response_struct(json);
-            if (json.success)
-            {
-                load_user_data(json.info);
-                TimeLeft timeleftForm = new TimeLeft();
-                timeleftForm.Show();
-            }
+
         }
 
         /// <summary>
@@ -778,11 +767,6 @@ namespace Cookies_Loader_Base
             user_data.createdate = data.createdate;
             user_data.lastlogin = data.lastlogin;
             user_data.subscriptions = data.subscriptions; // array of subscriptions (basically multiple user ranks for user with individual expiry dates 
-            if (Properties.Settings.Default.Account_Level == 2)
-            {
-                Properties.Settings.Default.time_left = Int32.Parse(user_data.subscriptions[0].timeleft);
-                Properties.Settings.Default.Save();
-            }
         }
         #endregion
         public string expirydaysleft()
