@@ -23,8 +23,9 @@
 1. Download or Gitclone this project
 2. Open Cookies_Loader_Base.sln with Visual Studio 2019
 3. Add the Bunfiu files
-4. Open FrmLogin.cs and add your keyauth api details in bot register & login
-5. Build / Run the project
+4. Open Login.cs and add your keyauth api details in
+5. Open Register.cs and add your keyauth api details in
+6. Build / Run the project
 ```
 
 ## 📃 〢 How to fix Bunifu errors
