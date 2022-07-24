@@ -119,10 +119,18 @@ namespace Cookies_Loader_Base
 
         #region API Config
         public static api KeyAuthApp = new api(
-            name: "MJMODZZ CSGO",
-            ownerid: "mAnXhZTxFI",
-            secret: "78797ba91461aabb2bef8d47797896f736add2eebad17bd83b3eedb3a4f14d78",
+        
+        
+        
+        /////////////////////////////// ADD YOURS KEYAUTH DETAILS HERE /////////////////////////////////////////
+            name: "",
+            ownerid: "",
+            secret: "",
             version: "1.0"
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            
+            
         );
         #endregion
 
