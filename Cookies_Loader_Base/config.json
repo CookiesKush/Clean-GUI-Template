@@ -1,0 +1,29 @@
+{
+    "AppID": 982334963976384563,
+    "Details": "Visiting: 8BP Launcher",
+    "State": "",
+    "LargeAsset":
+    {
+        "Key": "main_logo",
+        "Tooltip": "cookiesservices.xyz"
+    },
+    "SmallAsset":
+    {
+        "Key": "8bp",
+        "Tooltip": "8 Ball Pool Hack"
+    },
+    "StartTime": "",
+    "Buttons":
+    {
+        "Button1":
+        {
+            "Text": "Cookies Website",
+            "URL": "http://cookiesservices.xyz/"
+        },
+        "Button2":
+        {
+            "Text": "",
+            "URL": ""
+        }
+    }
+}
