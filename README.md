@@ -68,7 +68,7 @@
 ```
 - With setting up, watch this [Video](https://www.youtube.com/watch?v=wBWufvLBWw4&t=2s) <br>
 - Add your Name, Secret and OwnerID in [Register.cs Line 123-128](https://github.com/MJMODZZ/Clean-KeyAuth-GUI/blob/5bc84afc48074cda544a1396834d08d36caaea9d/Cookies_Loader_Base/Register.cs#L123) <br>
-- Add your Name, Secret and OwnerID in [Login.cs Line 125-130](https://github.com/MJMODZZ/Clean-KeyAuth-GUI/blob/5bc84afc48074cda544a1396834d08d36caaea9d/Cookies_Loader_Base/Login.cs#L125)  <br>
+- Add your Name,  Secret and OwnerID in [Login.cs Line 125-130](https://github.com/MJMODZZ/Clean-KeyAuth-GUI/blob/5bc84afc48074cda544a1396834d08d36caaea9d/Cookies_Loader_Base/Login.cs#L125)  <br>
 
 
 ## 💭 〢 ChangeLog
